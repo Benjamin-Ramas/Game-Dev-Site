@@ -1,0 +1,88 @@
+@import 'colours';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    transition-duration: 0.5s;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $backgroundColour;
+}
+
+header.down{
+    top: -6rem;
+}
+
+.header ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.header li{
+    margin: auto 1rem;
+}
+
+.header a{
+    text-decoration: none;
+    color: $text4;
+}
+
+.header a:hover{
+    color: $highlightCol;
+}
+
+.header .resumeButton{
+    border: 2px solid $highlightCol;
+    border-radius: 1rem;
+    background: none;
+    padding: 0.4rem 1rem;
+    font-weight: 800;
+    color: $highlightCol;
+    cursor: pointer;
+}
+
+.header .resumeButton:hover{
+    background-color: $diffusedHighlight;
+}
+
+.header .burgerButton{
+    width: 3rem;
+    margin-top: 1rem;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.header .burgerButton svg{
+    width: 100%;
+    fill: $highlightCol;
+}
+
+@media screen and (max-width: 625px) {
+    .header .burgerButton{
+        display: block;
+    }
+    .header{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    header.down{
+        top: -20rem;
+    }
+    .header ul{
+        display: flex;
+        margin-left: 0;
+        justify-content: space-around;
+        list-style-type: none;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+    
+    .header li{
+        margin: 1rem auto;
+        text-align: center;
+    }
+}

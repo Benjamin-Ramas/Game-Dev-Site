@@ -1,0 +1,41 @@
+@import 'colours';
+
+#contact-me {
+    margin-bottom: 5rem;
+}
+
+#contact-me p{
+    color: $text4;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#contact-me button{
+    margin: 0 auto;
+    display: block;
+
+    border: 3px solid $highlightCol;
+    border-radius: 2rem;
+    background: none;
+    padding: 0.5rem 1.25rem;
+    font-weight: 800;
+    color: $highlightCol;
+    font-size: 1.125em;
+    cursor: pointer;
+}
+
+#contact-me button:hover{
+    background-color: $diffusedHighlight;
+}
+
+.footerSection{
+    margin: auto;
+    text-align: center;
+    font-weight: 600;
+    color: $text4;
+}

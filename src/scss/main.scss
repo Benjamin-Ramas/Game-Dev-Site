@@ -1,0 +1,26 @@
+@import 'header';
+@import 'intro';
+@import 'aboutMe';
+@import 'gamesList';
+@import 'contactMe';
+@import 'sectionTitle';
+@import 'colours';
+
+body{
+    background-color: $backgroundColour;
+    color: white;
+    margin: 1rem;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.contentHolder{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
