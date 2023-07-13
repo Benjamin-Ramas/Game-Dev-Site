@@ -26,8 +26,6 @@ function useScrollDirection() {
 export default function Header(){
     const scrollDirection = useScrollDirection();
 
-    const [listOpen, setListOpen] = useState(false);
-
     return(
         <header className={`header ${ scrollDirection}`}>
             <h1>Benjamin</h1>

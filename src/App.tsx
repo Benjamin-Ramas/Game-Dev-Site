@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Header from './Header'
 import Intro from './Intro'
 import AboutMe from './AboutMe'
