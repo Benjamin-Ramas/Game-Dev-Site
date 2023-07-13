@@ -33,7 +33,7 @@ export default function Header(){
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#games">Games</a></li>
                 <li><a href="#contact-me">Contact Me</a></li>
-                <li><button className="resumeButton">Resume</button></li>
+                <li><a href ="./Resume.pdf" download><button className="resumeButton">Resume</button></a></li>
             </ul>
         </header>
     )
